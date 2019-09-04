@@ -1,0 +1,39 @@
+<div class="row title" (click)="toggleState($event)" hover-effect hoverColor="#e9ecef">
+    <div class="col company-name">Company Name:</div>
+    <div class="col-8"><strong>{{company.companyName}}</strong></div>
+
+</div>
+<div *ngIf="IsOpened">
+    <div class="row" hover-effect hoverColor="#e9ecef">
+        <div class="col">Involvement duration:</div>
+        <div class="col-8">{{company.involvementDiration}}</div>
+    </div>
+    <div class="row" hover-effect hoverColor="#e9ecef">
+        <div class="col">Project role:</div>
+        <div class="col-8">{{company.projectRole}}</div>
+    </div>
+    <div class="row" hover-effect hoverColor="#e9ecef">
+        <div class="col">Responsibilities:</div>
+        <div class="col-8">
+            <ul>
+                <li *ngFor="let item of company.responsibilities" hover-effect hoverColor="#e9ecff">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" hover-effect hoverColor="#e9ecef">
+        <div class="col" >Tools& Technologies:</div>
+        <div class="col-8">
+            <ul>
+                <li hover-effect hoverColor="#e9ecff" *ngFor="let item of company.toolsAndTechnologies">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" hover-effect hoverColor="#e9ecef">
+        <div class="col">Projects:</div>
+        <div class="col-8">
+            <ul>
+                <li hover-effect hoverColor="#e9ecff" *ngFor="let item of company.projects">{{item}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

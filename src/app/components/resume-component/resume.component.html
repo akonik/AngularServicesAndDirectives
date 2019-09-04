@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col text-right">
+        <h3>{{personalInformation.name}}</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col">Summary of Qualifications</div>
+    <div class="col-8">
+        <h6>{{personalInformation.summary}}</h6>
+    </div>
+</div>
+<div class="row">
+    <div class="col">Experience</div>
+    <div class="col-8">
+    </div>
+</div>
+<app-resume-company *ngFor="let company of companiesInfo" [company]="company">
+
+</app-resume-company>

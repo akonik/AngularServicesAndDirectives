@@ -1,0 +1,13 @@
+.row{
+    padding: 5px;
+}
+
+.col{
+    color: #31849b;
+}
+
+.title div{
+    background-color: #f2f2f2;
+    cursor: pointer;
+    line-height: 2em;
+}
