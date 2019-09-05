@@ -12,6 +12,13 @@ export class BarChartComponent implements OnInit {
 
     public barChartOptions: ChartOptions = {
         responsive: true,
+        scales:{
+            yAxes:[{
+                ticks:{
+                    min : 0
+                }
+            }]
+        }
     };
     public barChartLabels: Label[];
     public barChartType: ChartType = 'bar';

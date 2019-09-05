@@ -104,9 +104,14 @@ export class DataService {
         return this.projectsAmount;
     }
 
-    private technologiesUsedInProjects = new ChartData('', [10, 7, 2, 1, 8, 2, 2], ['C#', 'ASP.NET', 'Angular', 'React.JS', 'SQL', 'Unity', 'Unreal Engine 4']);
+    private skills = new ChartData('', [9, 7, 5, 8], [
+        'Backend',
+        'Frontend',
+        'Game Dev',
+        'Databases',
+    ]);
 
-    public get getTechnologiesUsedInProjectsData() {
-        return this.technologiesUsedInProjects;
+    public get getSkillsData() {
+        return this.skills;
     }
 }

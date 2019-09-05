@@ -1,5 +1,5 @@
 <div class="row title" (click)="toggleState($event)" hover-effect hoverColor="#e9ecef">
-    <div class="col company-name">Company Name:</div>
+    <div class="col company-name"> <span *ngIf="!IsOpened">✚</span> <span *ngIf="IsOpened"><b>−</b></span> Company Name:</div>
     <div class="col-8"><strong>{{company.companyName}}</strong></div>
 
 </div>

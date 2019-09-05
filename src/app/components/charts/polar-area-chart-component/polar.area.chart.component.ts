@@ -16,8 +16,8 @@ export class PolarAreaChartComponent implements OnInit {
     public polarAreaChartType: ChartType = 'polarArea';
 
     constructor(private dataService : DataService) {
-        this.polarAreaChartLabels = dataService.getTechnologiesUsedInProjectsData.valueLabels;
-        this.polarAreaChartData = dataService.getTechnologiesUsedInProjectsData.values;
+        this.polarAreaChartLabels = dataService.getSkillsData.valueLabels;
+        this.polarAreaChartData = dataService.getSkillsData.values;
      }
 
     ngOnInit() {
